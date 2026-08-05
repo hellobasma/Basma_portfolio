@@ -538,7 +538,7 @@ h1, h2, h3, h4 {
     }
     
     .dynamic-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
     
     .hero-nav {
@@ -563,7 +563,7 @@ h1, h2, h3, h4 {
     .title-card h1 { font-size: 3rem; }
     
     .dynamic-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
     
     .project-hero {
@@ -584,7 +584,7 @@ h1, h2, h3, h4 {
     }
     
     .portfolio-text {
-        font-size: 16vw; /* Slightly bigger relative size for small screens */
+        font-size: 11vw; /* Smaller relative size for small screens */
     }
     
     .contact-row {
@@ -595,8 +595,9 @@ h1, h2, h3, h4 {
     
     .resume-portrait {
         max-width: 100%;
-        height: auto;
-        min-height: 280px;
+        height: 250px;
+        min-height: auto;
+        margin-bottom: 20px;
     }
     
     .hero-nav {
