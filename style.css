@@ -559,7 +559,7 @@ h1, h2, h3, h4 {
 @media (max-width: 600px) {
     body {
         overflow-x: hidden !important;
-        width: 100vw !important;
+        width: 100% !important;
     }
 
     .main-container {
