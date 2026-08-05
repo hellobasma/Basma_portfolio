@@ -572,7 +572,9 @@ h1, h2, h3, h4 {
     }
 
     .project-block {
-        padding-left: 15px !important; /* Override inline padding */
+        padding: 20px 15px !important; /* Ensure symmetrical padding on mobile */
+        margin-left: -15px !important; /* Pull left slightly to align with card */
+        margin-right: -15px !important; /* Pull right to match */
     }
 
     .project-info, .project-cover {
@@ -581,8 +583,8 @@ h1, h2, h3, h4 {
     }
 
     .masonry-grid, .dynamic-grid { 
-        grid-template-columns: 1fr !important; 
-        gap: 15px !important; 
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 10px !important; 
     }
     
     .grid-img.wide { 
