@@ -622,11 +622,33 @@ h1, h2, h3, h4 {
         gap: 5px !important;
     }
     
+    .about-hero-wrapper {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 20px !important;
+        margin-bottom: 25px !important;
+    }
+    
     .resume-portrait {
-        max-width: 100% !important;
-        height: auto !important;
-        aspect-ratio: 4/5 !important;
-        margin: 0 auto 30px auto !important;
+        width: 130px !important;
+        height: 130px !important;
+        margin: 0 !important;
+        flex-shrink: 0 !important;
+        border-radius: 20px !important;
+        aspect-ratio: 1/1 !important;
+    }
+    
+    .resume-intro {
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 5px !important;
+    }
+    
+    .hello-text {
+        font-size: 2.5rem !important;
     }
     
     .hero-nav {
@@ -643,7 +665,8 @@ h1, h2, h3, h4 {
     }
     
     .badge {
-        display: none !important;
+        transform: scale(0.6) !important;
+        /* Keep them visible on mobile, just smaller */
     }
 
     .works-header {
