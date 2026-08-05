@@ -636,7 +636,7 @@ h1, h2, h3, h4 {
         height: 100px !important;
         margin: 0 !important;
         flex-shrink: 0 !important;
-        border-radius: 50% !important;
+        border-radius: 16px !important;
         aspect-ratio: 1/1 !important;
     }
     
