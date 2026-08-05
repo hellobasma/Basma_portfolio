@@ -557,18 +557,45 @@ h1, h2, h3, h4 {
 
 /* Mobile / Phone Layout */
 @media (max-width: 600px) {
-    .masonry-grid { grid-template-columns: 1fr; gap: 15px; }
-    .grid-img.wide { grid-column: span 1; }
-    .card { padding: 30px 20px; }
-    .title-card h1 { font-size: 3rem; }
+    body {
+        overflow-x: hidden !important;
+        width: 100vw !important;
+    }
+
+    .main-container {
+        padding: 20px 10px !important;
+        width: 100% !important;
+    }
+
+    .card {
+        padding: 30px 15px !important;
+    }
+
+    .project-block {
+        padding-left: 15px !important; /* Override inline padding */
+    }
+
+    .project-info, .project-cover {
+        min-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .masonry-grid, .dynamic-grid { 
+        grid-template-columns: 1fr !important; 
+        gap: 15px !important; 
+    }
     
-    .dynamic-grid {
-        grid-template-columns: 1fr !important;
+    .grid-img.wide { 
+        grid-column: span 1 !important; 
+    }
+    
+    .title-card h1 { 
+        font-size: 3rem !important; 
     }
     
     .project-hero {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column !important;
+        text-align: center !important;
     }
     
     .project-cover {
@@ -576,43 +603,58 @@ h1, h2, h3, h4 {
     }
     
     .hello-text {
-        font-size: 3.5rem;
+        font-size: 2.5rem !important;
     }
     
     .name-large {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
     
     .portfolio-text {
-        font-size: 11vw; /* Smaller relative size for small screens */
+        font-size: 12vw !important;
     }
     
     .contact-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 5px !important;
     }
     
     .resume-portrait {
-        max-width: 100%;
-        height: 250px;
-        min-height: auto;
-        margin-bottom: 20px;
+        max-width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 4/5 !important;
+        margin: 0 auto 30px auto !important;
     }
     
     .hero-nav {
-        flex-direction: row;
-        gap: 10px;
-        padding: 10px 15px;
-        border-radius: 12px;
+        flex-direction: row !important;
+        gap: 10px !important;
+        padding: 10px 15px !important;
+        border-radius: 12px !important;
+        width: 90% !important;
+        justify-content: center !important;
     }
     
     .hero-nav a {
-        font-size: 0.8rem;
+        font-size: 0.75rem !important;
     }
     
     .badge {
-        display: none; /* Hide floating badges on very small screens to avoid clutter */
+        display: none !important;
+    }
+
+    .works-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    
+    .works-title h2 {
+        font-size: 2.5rem !important;
+    }
+    
+    .main-category-header h2 {
+        font-size: 2rem !important;
     }
 }
 
