@@ -620,22 +620,23 @@ h1, h2, h3, h4 {
         flex-direction: column !important;
         align-items: flex-start !important;
         gap: 5px !important;
+        word-break: break-all !important;
     }
     
     .about-hero-wrapper {
         display: flex !important;
         flex-direction: row !important;
         align-items: center !important;
-        gap: 20px !important;
-        margin-bottom: 25px !important;
+        gap: 15px !important;
+        margin-bottom: 20px !important;
     }
     
     .resume-portrait {
-        width: 130px !important;
-        height: 130px !important;
+        width: 100px !important;
+        height: 100px !important;
         margin: 0 !important;
         flex-shrink: 0 !important;
-        border-radius: 20px !important;
+        border-radius: 50% !important;
         aspect-ratio: 1/1 !important;
     }
     
@@ -680,6 +681,15 @@ h1, h2, h3, h4 {
     
     .main-category-header h2 {
         font-size: 2rem !important;
+    }
+    
+    .lang-row {
+        grid-template-columns: 80px 80px 1fr !important;
+        font-size: 0.85rem !important;
+    }
+    
+    .software-icons-grid {
+        gap: 8px !important;
     }
 }
 
