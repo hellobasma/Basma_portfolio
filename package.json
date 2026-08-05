@@ -1,0 +1,24 @@
+{
+  "name": "basma_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellobasma/Basma_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hellobasma/Basma_portfolio/issues"
+  },
+  "homepage": "https://github.com/hellobasma/Basma_portfolio#readme",
+  "dependencies": {
+    "sharp": "^0.35.3"
+  }
+}
